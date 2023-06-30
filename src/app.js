@@ -7,6 +7,7 @@ const routes = {
 };
 
 document.querySelector('nav').addEventListener('click', onNavigate);
+
 document.getElementById('see-how-button').addEventListener('click', onSeeHowButtonClick);
 
 

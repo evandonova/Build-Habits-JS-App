@@ -4,13 +4,11 @@ body {
 }
 
 nav{
-/*    background-color: blueviolet;*/
     height: 50px;
     text-align: right;
     color: #fff;
     font-family: sans-serif;
     margin: 0 auto;
-    
 }
 
 nav li{
@@ -38,11 +36,14 @@ nav li{
 }
 
 #form-box{
-/*    background-color: aqua;*/
-    padding:1%;
-    top:50%;
-    position: absolute;
-    left:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-box input,
+#form-box form {
+  margin-right: 10px; /* Adjust the margin as needed */
 }
 
 .choose-lang{
@@ -63,27 +64,29 @@ nav li{
     background-color: #FF9933;
     color:#fff;
     cursor: pointer;
-/*    width: 120px;*/
     font-size: 110%;
 }
 
-#language{
-    background-color:white;
-    padding:12px;
-    border-radius: 5px;
-    cursor:pointer;
-    border:2px solid black;
-
-    
+#habitName {
+    font-size: medium;
+    padding: 5px;
 }
 
-#language:hover{
+#habitType{
+    background-color:white;
+    padding: 6px;
+    border-radius: 5px;
+    cursor:pointer;
+    margin-top: 16px;
+    font-size: medium;
+}
+
+#habitType:hover{
     background-color:#fff;
 }
 
-#language option{
+#habitType option{
     background-color: #fff;
-    
 }
 
 .quiz{
@@ -147,7 +150,6 @@ nav li{
 
 }
 
-
 .options{
     background-color: #fff;
     display:block;
@@ -173,8 +175,10 @@ nav li{
 .submit-answer{
     background-color:white;
     border: 2px solid #FF9933;
-    padding: 15px;
+    padding: 10px;
+    width: 300px;
     border-radius: 20px;
+    font-size: medium;
     font-family: monospace;
     transition: background-color 0.3s,border 0.2s, color 0.2s;
 }
@@ -205,6 +209,36 @@ nav li{
     color: #fff;
     cursor: pointer;
     border-radius: 20px;
+}
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 84%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+}
+  
+.active, .collapsible:hover {
+    background-color: #555;
+}
+  
+.content {
+    padding: 0px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.explanation {
+    margin-top: 50px;
 }
 
 /*Final Results*/
@@ -256,7 +290,7 @@ table {
 }
   
 td, th {
-    border: 1px solid #dddddd;
+    border: 2px solid #dddddd;
     text-align: center;
     padding: 8px;
 }

@@ -24,11 +24,34 @@
 
             <section id="scorecard-page" class="view-section">
                 <h2>Create your Habits Scorecard</h2>
-                <h3>More explanations...</h3>
-                <div id="habit-add">
-                    <input placeholder="A current habit you have..."></input>
-                    <button>Add</button>
+
+                <div class="explanation">
+                    <button type="button" class="collapsible">What is Habits Scorecard?</button>
+
+                    <div class="content">
+                        <p>The <b>Habits Scorecard</b> is a simple exercise we can use to become more aware of our behavior. <br> <br>
+                        It is based on the “<b>point-and-call</b>” system and helps us become aware of our current habits by listing them out. <br> <br> It encourages <b>self-reflection</b> and provides a visual representation of habits, aiding in the process of habit <br> formation and improvement.</p>
+                    </div>
                 </div>
+
+                <div id="habit-add">
+
+                    <div id="form-box">
+
+                        <input id="habitName" placeholder="A current habit you have..."></input>
+
+                        <form>
+                            <select id="habitType">
+                            <option value="Good" selected="selected">Good</option>
+                            <option value="Bad">Bad</option>
+                            <option value="Neutral">Neutral</option>
+                            </select> 
+                        </form>
+                    </div>
+
+                    <button type="button" class="submit-answer">Add</button>
+                </div>
+
                 <table class="center">
                     <tr>
                         <th>Good Habits</th>
